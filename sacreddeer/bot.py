@@ -4,13 +4,23 @@ import time
 
 import slackclient
 
-BOT_ID = os.environ.get('BOT_ID') # 'U2M6BHP4Y'
+BOT_NAME = 'sacred_deer'
+BOT_ID = None # 'U2M6BHP4Y'
 TOKEN = os.environ.get('TOKEN')
 
 
-AT_BOT = "<@" + BOT_ID + ">"
-
 slack_client = slackclient.SlackClient(TOKEN)
+
+def get_bot_id():
+    api_call = slack_client.api_call("users.list")
+    if api_call.get('ok'):
+        # retrieve all users so we can find our bot
+        users = api_call.get('members')
+        for user in users:
+            if 'name' in user and user.get('name') == BOT_NAME:
+                return user.get('id')
+    else:
+        raise LookupError("Could not find bot user with the name " + BOT_NAME)
 
 
 def handle_command(command, channel):
@@ -43,6 +53,10 @@ def parse_slack_output(slack_rtm_output):
         this parsing function returns None unless a message is
         directed at the Bot, based on its ID.
     """
+    if not BOT_ID:
+        BOT_ID = get_bot_id()
+    AT_BOT = "<@" + BOT_ID + ">"
+    
     output_list = slack_rtm_output
     if output_list and len(output_list) > 0:
         for output in output_list:
