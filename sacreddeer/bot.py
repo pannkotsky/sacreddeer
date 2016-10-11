@@ -4,7 +4,7 @@ import time
 
 import slackclient
 
-BOT_ID = 'U2M6BHP4Y'
+BOT_ID = os.environ.get('BOT_ID') # 'U2M6BHP4Y'
 TOKEN = os.environ.get('TOKEN')
 
 
