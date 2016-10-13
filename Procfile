@@ -1,1 +1,1 @@
-worker: deer
+worker: python cmd/deer
