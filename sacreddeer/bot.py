@@ -1,5 +1,6 @@
+# -*- coding: utf-8 -*-
+
 import logging
-import os
 import random
 import time
 
@@ -118,8 +119,3 @@ class Bot(object):
                 time.sleep(read_socket_delay)
         else:
             logging.error("Connection failed. Invalid Slack token or bot ID?")
-
-
-if __name__ == "__main__":
-    bot = Bot('sacred_deer', os.environ.get('TOKEN'))
-    bot.run()
