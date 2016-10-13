@@ -1,1 +1,1 @@
-process: deer
+worker: deer
