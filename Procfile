@@ -1,1 +1,1 @@
-worker: sacreddeer/bot.py
+worker: python sacreddeer/bot.py
