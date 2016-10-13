@@ -1,1 +1,1 @@
-process: deer
+worker: sacreddeer/bot.py
