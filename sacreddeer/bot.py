@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import logging
 import os
 import random
@@ -35,52 +38,52 @@ class Bot(object):
         """
         responses = {
             'en': [
-                "Yes",
-                "No",
-                "It doesn't matter",
-                "Chill, bro",
-                "Ha-ha, very funny",
-                "Yes, but shouldn't",
-                "Never",
-                "100%",
-                "1 of 100",
-                "Try again"
+                u"Yes",
+                u"No",
+                u"It doesn't matter",
+                u"Chill, bro",
+                u"Ha-ha, very funny",
+                u"Yes, but shouldn't",
+                u"Never",
+                u"100%",
+                u"1 of 100",
+                u"Try again"
             ],
             'ru': [
-                "Да",
-                "Нет",
-                "Это не важно",
-                "Спок, бро",
-                "Толсто",
-                "Да, хотя зря",
-                "Никогда",
-                "100%",
-                "1 из 100",
-                "Еще разок"
+                u"Да",
+                u"Нет",
+                u"Это не важно",
+                u"Спок, бро",
+                u"Толсто",
+                u"Да, хотя зря",
+                u"Никогда",
+                u"100%",
+                u"1 из 100",
+                u"Еще разок"
             ],
             'ua': [
-                "Так",
-                "Ні",
-                "Немає значення",
-                "Не сци, козаче",
-                "Товсто",
-                "Так, хоча даремно",
-                "Ніколи",
-                "100%",
-                "1 із 100",
-                "Спробуй ще"
+                u"Так",
+                u"Ні",
+                u"Немає значення",
+                u"Не сци, козаче",
+                u"Товсто",
+                u"Так, хоча даремно",
+                u"Ніколи",
+                u"100%",
+                u"1 із 100",
+                u"Спробуй ще"
             ],
             'de': [
-                "Ja",
-                "Nein",
-                "Das ist nicht jebachtung",
-                "Uspokojten, Bruder",
-                "Tolstische",
-                "Ja, aber Dolbojobist",
-                "Nie",
-                "100%",
-                "1 von 100",
-                "Poprobiren es noch einmal"
+                u"Ja",
+                u"Nein",
+                u"Das ist nicht jebachtung",
+                u"Uspokojten, Bruder",
+                u"Tolstische",
+                u"Ja, aber Dolbojobist",
+                u"Nie",
+                u"100%",
+                u"1 von 100",
+                u"Poprobiren es noch einmal"
             ]
         }
         lang = cmd[:2] if len(cmd) >= 2 else 'ru'

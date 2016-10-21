@@ -1,5 +1,9 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import unittest
-from unittest import mock
+
+import mock
 
 from sacreddeer import bot
 
@@ -32,15 +36,15 @@ class TestBot(unittest.TestCase):
     def test_handle_command_ua(self):
         cmd = u'ua Мене звільнять?'
         responses_ua = [
-            "Так",
-            "Ні",
-            "Немає значення",
-            "Не сци, козаче",
-            "Товсто",
-            "Так, хоча даремно",
-            "Ніколи",
-            "100%",
-            "1 із 100",
-            "Спробуй ще"
+            u"Так",
+            u"Ні",
+            u"Немає значення",
+            u"Не сци, козаче",
+            u"Товсто",
+            u"Так, хоча даремно",
+            u"Ніколи",
+            u"100%",
+            u"1 із 100",
+            u"Спробуй ще"
         ]
         self._handle_command(cmd, responses_ua)
