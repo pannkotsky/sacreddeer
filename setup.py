@@ -8,7 +8,7 @@ def readme():
 setuptools.setup(
     name='sacreddeer',
     version='0.1',
-    description='ASk your stupid questions and Deer will answer',
+    description='Ask your stupid questions and Deer will answer',
     url='http://github.com/pannkotsky/sacreddeer',
     author='Valerii Kovalchuk',
     author_email='kovvalole@gmail.com',
@@ -17,5 +17,6 @@ setuptools.setup(
     install_requires=[
         'slackclient',
     ],
+    scripts=['cmd/deer'],
     zip_safe=False
 )
