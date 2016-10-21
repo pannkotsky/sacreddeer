@@ -7,7 +7,7 @@ def readme():
 
 setuptools.setup(
     name='sacreddeer',
-    version='0.1',
+    version='0.2',
     description='Ask your stupid questions and Deer will answer',
     url='http://github.com/pannkotsky/sacreddeer',
     author='Valerii Kovalchuk',
