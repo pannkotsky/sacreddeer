@@ -13,6 +13,9 @@ How to use
 
    (on PyPi soon).
 
+#. Create bot user with name ``sacred_deer`` in your Slack team
+   and copy his token provided by Slack.
+
 #. Export bot token as the environment variable:
 
    .. code-block:: console
