@@ -13,6 +13,12 @@ How to use
 
    (on PyPi soon).
 
+#. Export bot token as the environment variable:
+
+   .. code-block:: console
+
+      export TOKEN=123k-jkj213123kjkjk...
+
 #. To run the bot, execute command:
 
    .. code-block:: console
@@ -21,6 +27,6 @@ How to use
 
 #. Ask your stupid questions in Slack channel with ``@sacred_deer``.
 
-Default language of the Deer is russian, you can ask him for answer
+Default language of the Deer is Russian, you can ask him for answer
 in one of the other languages by adding ``en``, ``ua`` or ``de`` after the
 ``@sacred_deer``.
