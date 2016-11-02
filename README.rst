@@ -9,9 +9,7 @@ How to use
 
    .. code-block:: console
 
-      pip install .
-
-   (on PyPi soon).
+      pip install sacreddeer
 
 #. Create bot user with name ``sacred_deer`` in your Slack team
    and copy his token provided by Slack.
