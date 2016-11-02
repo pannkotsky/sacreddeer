@@ -3,8 +3,9 @@
 
 import os
 
-from sacreddeer import bot
+from sacreddeer import sacred_deer_bot
 
 
-deer_bot = bot.Bot('sacred_deer', os.environ.get('TOKEN'))
+deer_bot = sacred_deer_bot.SacredDeer('sacred_deer', os.environ.get('TOKEN'),
+                                      'Sacred Deer')
 deer_bot.run()
