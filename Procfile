@@ -1,1 +1,1 @@
-worker: python sacreddeer/bot.py
+worker: python cmd/elk
