@@ -18,7 +18,7 @@ How to use
 
    .. code-block:: console
 
-      export TOKEN=123k-jkj213123kjkjk...
+      export DEER_TOKEN=123k-jkj213123kjkjk...
 
 #. To run the bot, execute command:
 

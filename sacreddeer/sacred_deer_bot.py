@@ -65,5 +65,6 @@ class SacredDeer(base.Bot):
 
 
 if __name__ == "__main__":
-    bot = SacredDeer('sacred_deer', os.environ.get('TOKEN'), 'Sacred Deer')
+    bot = SacredDeer('sacred_deer', os.environ.get('DEER_TOKEN'),
+                     'Sacred Deer')
     bot.run()

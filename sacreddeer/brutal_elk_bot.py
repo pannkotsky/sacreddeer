@@ -93,5 +93,5 @@ class BrutalElk(base.Bot):
 
 
 if __name__ == "__main__":
-    bot = BrutalElk('brutal_elk', os.environ.get('TOKEN'), 'Brutal Elk')
+    bot = BrutalElk('brutal_elk', os.environ.get('ELK_TOKEN'), 'Brutal Elk')
     bot.run()
