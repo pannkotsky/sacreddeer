@@ -17,6 +17,6 @@ setuptools.setup(
     install_requires=[
         'slackclient',
     ],
-    scripts=['cmd/deer', 'cmd/elk'],
+    scripts=['cmd/deer'],
     zip_safe=False
 )
