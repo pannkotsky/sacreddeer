@@ -4,7 +4,7 @@
 import os
 import random
 
-from sacreddeer import base
+from slckbt import base
 
 
 class SacredDeer(base.Bot):
